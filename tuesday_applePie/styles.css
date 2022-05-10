@@ -1,0 +1,15 @@
+/* el id es unico y se usa para cosaS MUY ESPECIFICAS */
+
+#section_cook {
+  border-top: 2px solid grey;
+}
+#section_cook2 {
+  border-top: 2px solid red;
+}
+
+/* SE MODIFICO EL DIV CON LA CLASE PARA AMBOS CASOS */
+.border {
+  border-top: 2px solid grey;
+  padding-top: 2em;
+  margin-top: 2em;
+}
