@@ -4,8 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
   </head>
   <!-- liga al pdf https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/spotify-prototype.pdf -->
-  <body></body>
+  <body>
+    <main>
+      <!-- section de header image -->
+      <header>
+        <div>
+          <div>
+            <img
+              class="spotify-logo"
+              src="images/spotify-logo.png"
+              alt="spoty logo"
+            />
+          </div>
+          <nav id="page-nav">
+            <ul>
+              <li><a href="#Premium">Premium</a></li>
+              <li><a href="#Discover">Discover</a></li>
+              <li><a href="#Help">Help</a></li>
+              <li><a href="#Download">Download</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="img-container">
+        <img id="img-back" src="images/landing.jpg" alt="imagen de concierto" />
+        <div class="centered-text">
+          <span class="centered-title">Music for everyone.</span> <br />
+          <br />
+          <span class="centered-subtitle">
+            Spotify is now free on mobile, tablet and computer.
+          </span>
+          <br />
+          <span class="centered-subtitle">
+            Listen to the right music, wherever you are.
+          </span>
+        </div>
+      </div>
+
+      <!-- Section 1  -->
+      <section id="advantages">
+        <h1><span> Whats on Spotify</span></h1>
+        <!-- contenedor de cards externo-->
+        <div class="main-container">
+          <!-- card -->
+          <div class="card">
+            <img src="images/music-icon.png" alt="music icon" />
+            <h2>Millions</h2>
+            <p>There are millions of songs on Spotify</p>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <img src="images/high-quality-icon.png" alt="music icon" />
+            <h2>HD Music</h2>
+            <p>Listen to music as if you were listening live</p>
+          </div>
+          <!-- card -->
+          <div class="card">
+            <img src="images/devices-icon.png" alt="music icon" />
+            <h2>Stream Everywhere</h2>
+            <p>Stream music on your smartphone, tablet or computer</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
