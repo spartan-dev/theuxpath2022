@@ -1,0 +1,124 @@
+<!-- html5  version de html no se toca-->
+<!DOCTYPE html>
+<!-- etiqueta  html de inicio de documento-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- tags -->
+    <header>
+      <div>
+        <h1>Hola ux path</h1>
+      </div>
+      <div>
+        <button>a rockear</button>
+        <button>Link a cosas</button>
+      </div>
+    </header>
+
+    <section>
+      <table>
+        <tr>
+          <!-- table row -->
+          <th>Name</th>
+          <th>Bootcamp</th>
+          <th>City</th>
+          <!-- table header -->
+        </tr>
+        <tr>
+          <td>Jose Perez</td>
+          <td>FullStack WebDev</td>
+          <td>Madrid</td>
+        </tr>
+        <tr>
+          <td>Michael Smith</td>
+          <td>FrontEnd WebDev</td>
+          <td>Barcelona</td>
+        </tr>
+        <tr>
+          <td>Ariel Quinones</td>
+          <td>MasterChef WebDev</td>
+          <td>Miami</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h2>display de tiempo</h2>
+      <time>May 15</time>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et error eius
+        sint adipisci. Velit cumque molestiae dignissimos iusto eaque, maxime
+        placeat assumenda debitis unde molestias laboriosam soluta commodi
+        impedit optio!
+      </p>
+    </section>
+
+    <section>
+      <h2>Informacion para formularios</h2>
+      <form action="" onsubmit="">
+        <!-- puede ir sin los atributos extra for y id  -->
+        <label>Nombre</label>
+        <input type="text" placeholder=" please put your name" />
+
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="tu edad" />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="email" />
+        <label for="mascota">Mascotas</label>
+        <select name="maascota" id="mascota">
+          <option value="id_1">Perro</option>
+          <option value="id_2">Gato</option>
+          <option value="">Serpiente</option>
+          <option value="">Pajarillos</option>
+          <option value="">tortugas</option>
+          <option value="">otro</option>
+        </select>
+        <textarea cols="30" rows="10"> </textarea>
+
+        <label for="meeting-time">Choose a time for your appointment:</label>
+
+        <input
+          type="datetime-local"
+          id="meeting-time"
+          name="meeting-time"
+          value="2018-06-12T19:30"
+          min="2018-06-07T00:00"
+          max="2018-06-14T00:00"
+        />
+        <button>Send info</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Listas ordenaadas y no tanto</h2>
+      <ol>
+        <span>Mis comidas prefer</span>
+        <li>Tacos</li>
+        <li>Tortas</li>
+        <li>Tamales</li>
+        <li>Tostadas</li>
+        <li>Tlacoyos</li>
+      </ol>
+
+      <ul>
+        <span>Soy una lista desordenada</span>
+        <li>Rock</li>
+        <li>Folk</li>
+        <li>Regieton</li>
+        <li>Metal</li>
+        <li>Disco 80</li>
+      </ul>
+    </section>
+    <script>
+      // solo para lenguaje javascript del lado del cliente o
+      // para el navegador
+      const nombre = "emmanuel ";
+      console.log(nombre);
+    </script>
+  </body>
+</html>
