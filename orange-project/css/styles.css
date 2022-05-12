@@ -1,0 +1,204 @@
+:root {
+  --fondoWite: #f2f2f2;
+  --fondoForm: #fff;
+  --purple: #800080;
+  --violet: #ee82ee;
+  --azulTexto: #031d5b;
+  --grey: #5b6c94;
+  --inputGrey: #b6bbc9;
+}
+
+body {
+  align-items: center;
+  background-color: var(--fondoWite);
+  color: var(--azulTexto);
+  display: flex;
+  flex-direction: column;
+  font-family: "Encode Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#logo {
+  color: var(--purple);
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  gap: 0.25em;
+  align-items: center;
+}
+#logo img {
+  margin-right: 0.25rem;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li:not(:last-child) {
+  padding-right: 2rem;
+}
+
+nav li a {
+  color: var(--azulTexto);
+  font-weight: 700;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+nav li a:hover {
+  color: var(--grey);
+}
+section {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #image {
+  background-image: url("../images/orange-search-engine-phone.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin-bottom: 2rem;
+  height: 230px;
+  width: 20rem;
+  margin-left: 4em;
+}
+
+form {
+  background-color: var(--fondoForm);
+  border: 1px solid var(--violet);
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.152644);
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  width: 100%;
+}
+
+input {
+  background: rgba(0, 0, 0, 0);
+  color: var(--inputGrey);
+  display: inline;
+  box-sizing: border-box;
+  height: 2.5rem;
+  font-weight: 700;
+}
+
+#search-field {
+  border: none;
+  border-radius: 0.25rem 0px 0px 0.25rem;
+  padding-left: 1rem;
+  width: 100%;
+  color: #000000;
+}
+
+#search-button {
+  background-image: url("../images/search-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: var(--fondoForm); */
+  border: none;
+  color: var(--inputGrey);
+  margin-top: 1px;
+  margin-bottom: 1px;
+  width: 3.5rem;
+  /* border-radius: 0px 0.25rem 0.25rem 0.25rem; */
+}
+#search-button:hover {
+  background-image: url("../images/search-icon-white.svg");
+  background-color: #9bdbe7;
+  border: 1px solid #9bdbe7;
+  border-radius: 0px 0.25rem 0.25rem 0px;
+  color: #fff;
+}
+section h1 {
+  font-family: "Encode Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+
+section p {
+  text-align: center;
+}
+
+section ul {
+  margin: 0 0 1rem 0;
+}
+section ul li {
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+section ul li img {
+  margin-right: 0.25rem;
+}
+.app-store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  background: var(--purple);
+  border-radius: 16px;
+  border: 0;
+  display: block;
+  height: 3.75rem;
+  width: 10rem;
+  filter: drop-shadow(0px 4px 4px rgba(3, 29, 91, 0.25));
+}
+
+.btn:hover {
+  background: var(--violet);
+  color: var(--purple);
+}
+
+.btn a {
+  color: var(--fondoForm);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.rating {
+  margin: 0.5rem 0 0 0;
+}
+
+footer {
+  color: var(--inputGrey);
+  font-weight: 400;
+  font-family: "Roboto", Sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
