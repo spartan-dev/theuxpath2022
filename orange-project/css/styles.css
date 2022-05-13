@@ -194,6 +194,8 @@ section ul li img {
 }
 
 footer {
+  max-height: 5em;
+  height: 5em;
   color: var(--inputGrey);
   font-weight: 400;
   font-family: "Roboto", Sans-serif;
@@ -201,4 +203,76 @@ footer {
   font-size: 12px;
   line-height: 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+/* estas son las medias queries */
+/* para la responsividad mobile first */
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 30rem;
+  }
+
+  section #image {
+    background-image: url("../images/orange-search-engine-tablet.png");
+    height: 25rem;
+    width: 30rem;
+  }
+  section {
+    width: 33rem;
+  }
+  section ul {
+    display: flex;
+    gap: 2em;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  nav {
+    display: flex;
+    margin-bottom: 6rem;
+    width: 80%;
+    justify-content: space-between;
+  }
+  .container {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    /* con order en valors numericos puede resolver igual */
+  }
+  main #image {
+    background-image: url("../images/orange-search-engine-desktop.png");
+    width: 34rem;
+    height: 25rem;
+  }
+  section {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  section h1 {
+    text-align: left;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 54px;
+  }
+  section p {
+    font-size: 1.25rem;
+  }
+
+  #btn-container {
+    display: flex;
+    gap: 1em;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .rating {
+    display: flex;
+    gap: 0.5em;
+  }
+  footer {
+    font-size: 24px;
+  }
 }
